@@ -1,0 +1,29 @@
+[project]
+name = "uaoff"
+version = "0.1.0"
+description = "Clustering analysis of the Open Food Facts dataset (K-Means, DBSCAN, Hierarchical)"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "pandas>=2.2",
+    "numpy>=2.0",
+    "matplotlib>=3.9",
+    "seaborn>=0.13",
+    "scikit-learn>=1.5",
+    "scipy>=1.13",
+    "gdown>=5.2",
+    "ipykernel>=6.29",
+]
+
+[project.scripts]
+uaoff = "uaoff:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pandas-stubs>=3.0.5.260914",
+    "scipy-stubs>=1.18.1.1",
+]
