@@ -1,5 +1,6 @@
 # Python-generated files
 __pycache__/
+/notebooks
 *.py[oc]
 build/
 dist/
@@ -16,7 +17,3 @@ data/
 
 # Jupyter
 .ipynb_checkpoints/
-
-# Plots / generated outputs
-plots/
-*.png
